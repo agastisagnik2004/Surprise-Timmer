@@ -46,7 +46,7 @@ export default function BirthdayContent() {
           <CakeIcon className="h-7 w-7 text-accent" />
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed italic">
-          "Remember that one time we almost missed the train but made it just in time? That's how I hope your year goes: a thrilling adventure where everything works out perfectly in the end. May your year ahead be as exciting and wonderful as you are. Cheers to many more memories!"
+          "সহেলি গড়াই, তুমি আমার জীবনের আলো, আমার হৃদয়ের ধ্বনি। তোমার জন্মদিন মানে আমার জীবনের সবচেয়ে বিশেষ দিন। তোমার হাসিতে আমি খুঁজে পাই স্বর্গের সুখ, তোমার ভালোবাসায় আমি পাই আমার পৃথিবী। আজ এই দিনে আমার একটাই প্রার্থনা—আমাদের ভালোবাসা যেন প্রতিদিন আরও গভীর হয়, আর তোমার প্রতিটি স্বপ্ন পূর্ণ হোক। শুভ জন্মদিন, আমার প্রাণের মানুষ।"
         </p>
       </section>
     </div>
