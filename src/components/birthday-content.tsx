@@ -9,7 +9,7 @@ export default function BirthdayContent() {
     <div className="animate-in fade-in-50 duration-1000 space-y-8 sm:space-y-12">
       <header className="space-y-4">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-primary font-headline tracking-tight">
-          Happy Birthday!
+          শুভ জন্মদিন
         </h1>
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
           The wait is over! Wishing you a day filled with love, laughter, and all the things that make you happy.
@@ -24,7 +24,7 @@ export default function BirthdayContent() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {galleryImages.map((image) => (
-            <div key={image.id} className="group overflow-hidden rounded-lg shadow-lg aspect-square">
+            <div key={image.id} className="group overflow-hidden rounded-lg shadow-lg aspect-[1/1]">
               <Image
                 src={image.imageUrl}
                 alt={image.description}
