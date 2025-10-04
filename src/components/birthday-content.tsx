@@ -1,13 +1,9 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CakeIcon, GiftIcon } from '@/components/icons';
-import { cn } from '@/lib/utils';
 
 export default function BirthdayContent() {
   const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-'));
-  const specialImage = galleryImages.find(img => img.id === 'gallery-7');
-  const otherImages = galleryImages.filter(img => img.id !== 'gallery-7');
-
 
   return (
     <div className="animate-in fade-in-50 duration-1000 space-y-8 sm:space-y-12">
@@ -26,29 +22,17 @@ export default function BirthdayContent() {
             Photo Gallery
             <GiftIcon className="h-7 w-7 text-accent" />
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {specialImage && (
-             <div key={specialImage.id} className="group overflow-hidden rounded-lg shadow-lg md:col-span-2 md:row-span-2">
-              <Image
-                src={specialImage.imageUrl}
-                alt={specialImage.description}
-                width={800}
-                height={800}
-                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                data-ai-hint={specialImage.imageHint}
-                priority
-              />
-            </div>
-          )}
-          {otherImages.map((image) => (
-            <div key={image.id} className="group overflow-hidden rounded-lg shadow-lg">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {galleryImages.map((image) => (
+            <div key={image.id} className="group overflow-hidden rounded-lg shadow-lg aspect-square">
               <Image
                 src={image.imageUrl}
                 alt={image.description}
-                width={400}
-                height={400}
+                width={600}
+                height={600}
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                 data-ai-hint={image.imageHint}
+                priority={galleryImages.indexOf(image) === 0}
               />
             </div>
           ))}
