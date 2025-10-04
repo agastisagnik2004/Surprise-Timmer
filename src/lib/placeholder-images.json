@@ -1,4 +1,5 @@
-
+{
+  "placeholderImages": [
   {
     id: 'gallery-7',
     description: 'A woman in a red saree with a flower in her hair.',
@@ -17,4 +18,5 @@
     image: img3,
     imageHint: 'friends group'
   }
-
+]
+}
