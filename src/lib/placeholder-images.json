@@ -1,4 +1,4 @@
-export const PlaceHolderImages: ImagePlaceholder[] = [
+
   {
     id: 'gallery-7',
     description: 'A woman in a red saree with a flower in her hair.',
@@ -17,4 +17,4 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     image: img3,
     imageHint: 'friends group'
   }
-];
+
