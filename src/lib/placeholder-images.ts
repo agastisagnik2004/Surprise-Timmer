@@ -1,10 +1,8 @@
-import data from './placeholder-images.json';
+import { StaticImageData } from 'next/image'; // Only if using Next.js
 
 export type ImagePlaceholder = {
   id: string;
   description: string;
-  image: string 
+  image: StaticImageData; // Use 'any' if not Next.js
   imageHint: string;
 };
-
-export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;
