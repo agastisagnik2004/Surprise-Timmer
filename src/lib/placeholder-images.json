@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "gallery-1",
+      "description": "A festive birthday cake with candles.",
+      "imageUrl": "https://images.unsplash.com/photo-1621303837174-89787a7d4729?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiaXJ0aGRheSUyMGNha2V8ZW58MHx8fHwxNzU5NDg3OTA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "birthday cake"
+    },
+    {
+      "id": "gallery-2",
+      "description": "A pile of colorful wrapped presents.",
+      "imageUrl": "https://images.unsplash.com/photo-1544884576-92fe6c8b154d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcmVzZW50cyUyMGdpZnRzfGVufDB8fHx8MTc1OTYwMDIyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "presents gifts"
+    },
+    {
+      "id": "gallery-3",
+      "description": "A group of friends celebrating at a party.",
+      "imageUrl": "https://images.unsplash.com/photo-1523301343968-6a6ebf63c672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYXJ0eSUyMGZyaWVuZHN8ZW58MHx8fHwxNzU5NTk1MTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "party friends"
+    },
+    {
+      "id": "gallery-4",
+      "description": "Colorful balloons floating in the air.",
+      "imageUrl": "https://images.unsplash.com/photo-1658893663122-ec4cfa43be36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWxsb29ucyUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc1OTYwMDIyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "balloons celebration"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A person blowing out birthday candles.",
+      "imageUrl": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiaXJ0aGRheSUyMGNhbmRsZXN8ZW58MHx8fHwxNzU5NjAwMjIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "birthday candles"
+    },
+    {
+      "id": "gallery-6",
+      "description": "A beautiful landscape view from a memorable trip.",
+      "imageUrl": "https://images.unsplash.com/photo-1601236359467-3b980c0a8bc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYW5kc2NhcGUlMjB2aWV3fGVufDB8fHx8MTc1OTYwMDIyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "landscape view"
+    }
+  ]
 }
