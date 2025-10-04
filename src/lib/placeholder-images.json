@@ -19,6 +19,12 @@
       "imageHint": "woman saree"
     },
     {
+      "id": "gallery-8",
+      "description": "A woman in a maroon dress in front of a temple.",
+      "imageUrl": "https://storage.googleapis.com/monet-prod-us-central1-0/094254b4-d576-476c-850d-85f9227f2c25/output.png",
+      "imageHint": "woman temple"
+    },
+    {
       "id": "gallery-4",
       "description": "Colorful balloons floating in the air.",
       "imageUrl": "https://images.unsplash.com/photo-1658893663122-ec4cfa43be36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYWxsb29ucyUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc1OTYwMDIyMnww&ixlib=rb-4.1.0&q=80&w=1080",
