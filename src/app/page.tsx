@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react';
 import BirthdayContent from '@/components/birthday-content';
 import Countdown from '@/components/countdown';
+import { EnvelopeIcon } from '@/components/icons';
 
 export default function Home() {
   const [isTimeUp, setIsTimeUp] = useState(false);
   const [targetDate, setTargetDate] = useState<Date | null>(null);
+  const [isOpening, setIsOpening] = useState(false);
 
   useEffect(() => {
     const today = new Date();
@@ -19,6 +21,14 @@ export default function Home() {
     }
   }, []);
 
+  const handleTimeUp = () => {
+    setIsOpening(true);
+    setTimeout(() => {
+      setIsTimeUp(true);
+      setIsOpening(false);
+    }, 1000); // Match animation duration
+  };
+
   useEffect(() => {
     if (!targetDate) return;
 
@@ -29,7 +39,7 @@ export default function Home() {
 
     const interval = setInterval(() => {
       if (new Date() >= targetDate) {
-        setIsTimeUp(true);
+        handleTimeUp();
         clearInterval(interval);
       }
     }, 1000);
@@ -40,11 +50,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-center bg-background p-4 sm:p-8 overflow-hidden font-writing">
       <div className="relative w-full max-w-4xl">
-        {!isTimeUp && targetDate ? (
+        {!isTimeUp ? (
           <div className="w-full shadow-2xl border-2 border-primary/10 bg-card/80 backdrop-blur-sm rounded-lg p-6 sm:p-10 text-center">
-            <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">A Surprise is Waiting!</h2>
-            <p className="text-xl sm:text-2xl text-muted-foreground mb-8">Unlock in:</p>
-            <Countdown targetDate={targetDate} onTimeUp={() => setIsTimeUp(true)} />
+             <div className={`transition-opacity duration-500 ${isOpening ? 'opacity-0' : 'opacity-100'}`}>
+              <EnvelopeIcon className="h-24 w-24 mx-auto text-primary/50 mb-4" />
+              <h2 className="text-4xl sm:text-5xl font-bold text-primary mb-4">A Letter for You</h2>
+              <p className="text-xl sm:text-2xl text-muted-foreground mb-8">Unseals in:</p>
+              {targetDate && <Countdown targetDate={targetDate} onTimeUp={handleTimeUp} />}
+            </div>
           </div>
         ) : (
           <div className="w-full shadow-2xl border-2 border-primary/10 bg-card/80 backdrop-blur-sm rounded-lg p-6 sm:p-10 text-center animate-in fade-in-50 duration-1000">
